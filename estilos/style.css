@@ -1,0 +1,150 @@
+@charset "UTF-8";
+
+/*IMPORTANTE: Para evitar possíveis incompatiblidades no código, colocar as configurações do tipo transition nas últimas linhas do objeto que está sendo estilizado. Ex: tag section*/
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+}
+
+html{
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    background-color:  rgba(116, 3, 116, 0.822);
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 250px;
+    height: 510px;
+    padding-right: 5px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.774);
+    /*------------------------------------------*/
+    transform: translate(-50%,-50%);
+    transition: width 0.5s, height 0.5;
+}
+
+main > section > form > div#imagem{
+    display: block;
+    height: 220px;
+    border: none;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+main > section > form > fieldset#dados{
+    display: block;
+    border: none;
+    height: 270px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding-left: 5px;
+}
+
+h3{
+    text-align: center;
+    font-weight: 700;
+    padding: 10px;
+}
+
+p#mensagem{
+    font-size: 0.7em;
+    margin-bottom: 15px;
+}
+
+div.campo{
+    background-color: rgba(126, 2, 126, 0.904);
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+    font-size: 1.8em;
+    width: 40px;
+    padding-top:5px;
+    padding-left: 5px;
+    /*--------------------*/
+    transform: translateY(7px);  /*IMPORTANTE*/
+     /*--------------------*/
+    
+}
+
+
+input[type=email], input[type=password]{
+    border: 1px solid rgba(20, 206, 144, 0.836);
+    margin-bottom: 3px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(151, 245, 215);
+    padding-top: 8px;
+    padding-right: 24px;
+     /*--------------------*/
+    transform: translateX(-6px); /*IMPORTANTE*/
+     /*--------------------*/
+
+}
+
+input#Entrar{
+    border: 1px solid rgba(20, 206, 144, 0.836);
+    margin-bottom: 5px;
+    background-color: rgba(6, 184, 124, 0.836);
+    height: 35px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+input#Esqueci{
+    border: 1px solid rgba(20, 206, 144, 0.836);
+    border-radius: 10px;
+    width: 100%;
+    background-color: white;
+    height: 35px;
+    color: rgba(3, 110, 75, 0.836);;
+}
+
+input[type=email], input[type=password]:focus-within{
+    background-color: white;
+}
+
+input#Entrar:hover{
+    background-color: rgb(5, 146, 101);
+}
+
+input#Esqueci:hover{
+    background-color: rgb(221, 219, 219);
+}
+
+

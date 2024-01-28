@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Configuração para Tablet*/
+    body{
+        background-image: linear-gradient(to top,brown, rgba(102, 3, 102, 0.801) );
+    }
+
+    section{
+        width: 80vw;
+        height: 330px;
+    }
+
+    main > section > form > div#imagem{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        float: left;
+        height: 330px;
+        width: 30%;
+
+    }
+
+    h3{
+        padding: 10px;
+        font-size: 1.5em;
+    }
+
+    p#mensagem{
+        padding: 4px 10px 10px 10px;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    input{
+        height: 40px;
+        width: 70%;
+    }
+
+    input#Entrar,input#Esqueci{
+        height: 40px;
+        width: 100%;
+    }
+
+}
+
+@media screen and (min-width: 992px){ /*CONFIGURAÇÃO PARA DESKTOP E TELAS GRANDES*/
+    body{
+        background-image: linear-gradient(to top,brown, rgba(102, 3, 102, 0.801) );
+    }
+
+    section{
+        width: 950px;
+        height: 400px;
+    }
+
+    main > section > form > div#imagem{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 20px;
+        float: left;
+        width: 50%;
+        height: 400px;
+    }
+
+    h3{
+        padding: 10px;
+        font-size: 2em;
+    }
+
+    p#mensagem{
+        font-size: 1.3em;
+    }
+
+    input{
+        height: 40px;
+        width: 70%;
+    }
+
+    input#Entrar,input#Esqueci{
+        height: 40px;
+        width: 100%;
+    }
+    
+}
+
