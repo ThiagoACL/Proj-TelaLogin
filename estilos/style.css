@@ -89,19 +89,24 @@ div.campo > label{
 }
 
 div.campo > span{
+    position: relative;
+    top:5px;
+    left:5px;
     color: white;
     font-size: 1.8em;
     width: 40px;
     padding-top:5px;
     padding-left: 5px;
     /*--------------------*/
-    transform: translateY(7px);  /*IMPORTANTE*/
+   /* transform: translateY(7px);  /*IMPORTANTE*/
      /*--------------------*/
     
 }
 
 
 input[type=email], input[type=password]{
+    position: relative;
+    right: 5px;
     border: 1px solid rgba(20, 206, 144, 0.836);
     margin-bottom: 3px;
     height: 30px;
@@ -109,8 +114,9 @@ input[type=email], input[type=password]{
     background-color: rgb(151, 245, 215);
     padding-top: 8px;
     padding-right: 24px;
+
      /*--------------------*/
-    transform: translateX(-6px); /*IMPORTANTE*/
+    /*transform: translateX(-6px); /*IMPORTANTE*/
      /*--------------------*/
 
 }
